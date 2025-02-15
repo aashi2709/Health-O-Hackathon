@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Workshops</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🧠 Jeevan Chakra</h1>
+        <p>Your space for self-growth, awareness, and healing</p>
+    </header>
+
+    <main>
+        <!-- Event Listings Section -->
+        <section class="events">
+            <h2>📅 Upcoming Workshops</h2>
+
+            <h3>🏢 Offline Workshops</h3>
+            <div id="offline-events" class="event-container"></div>
+
+            <h3>💻 Online Workshops</h3>
+            <div id="online-events" class="event-container"></div>
+        </section>
+
+        <!-- Registration Form -->
+        <section class="register">
+            <h2>Register for a Workshop</h2>
+            <form id="registration-form">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="event">Select Workshop:</label>
+                    <select id="event" required>
+                        <option value="">Choose a workshop...</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="concerns">Any specific concerns?</label>
+                    <textarea id="concerns" rows="3"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Register Now</button>
+            </form>
+            <div id="confirmation-message" class="confirmation-message"></div>
+        </section>
+    </main>
+
+    <!-- Modal Popup for Workshop Details -->
+    <!-- This is the only part of the HTML that needs to be modified - replace the existing modal div with this -->
+<!-- This is the only part of the HTML that needs to be modified - replace the existing modal div with this -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <p id="modal-type"></p>
+        <p id="modal-date"></p>
+        <p id="modal-instructor"></p>
+        <p id="modal-duration"></p>
+        <h3>Benefits:</h3>
+        <ul id="modal-benefits"></ul>
+    </div>
+</div>
+
+    <footer>
+        <p>🌿 Your mental health matters. Stay connected & take care. 💚</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
